@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dbnlxowky5bvg" path="res://Scenes/Platform.tscn" id="2_j5yw3"]
 [ext_resource type="PackedScene" uid="uid://b37160rwrwry4" path="res://Scenes/Coin.tscn" id="4_kldst"]
 [ext_resource type="PackedScene" uid="uid://drpqupdk0wraj" path="res://Scenes/Kill Zone.tscn" id="5_b2bpf"]
-[ext_resource type="PackedScene" uid="uid://iljw1so2pc13" path="res://Scenes/slime.tscn" id="6_7lihs"]
+[ext_resource type="PackedScene" path="res://Scenes/slime.tscn" id="6_7lihs"]
 
 [sub_resource type="Animation" id="Animation_iukft"]
 resource_name = "Idle"
@@ -231,7 +231,7 @@ _data = {
 position = Vector2(112, 45)
 
 [node name="Player" parent="." unique_id=79405842 instance=ExtResource("1_iukft")]
-position = Vector2(264, 6)
+position = Vector2(-22, -56)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1504128213]
 position = Vector2(0, 5)
