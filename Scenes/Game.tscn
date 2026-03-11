@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dbnlxowky5bvg" path="res://Scenes/Platform.tscn" id="2_j5yw3"]
 [ext_resource type="PackedScene" uid="uid://b37160rwrwry4" path="res://Scenes/Coin.tscn" id="4_kldst"]
 [ext_resource type="PackedScene" uid="uid://drpqupdk0wraj" path="res://Scenes/Kill Zone.tscn" id="5_b2bpf"]
+[ext_resource type="PackedScene" uid="uid://iljw1so2pc13" path="res://Scenes/slime.tscn" id="6_7lihs"]
 
 [sub_resource type="Animation" id="Animation_iukft"]
 resource_name = "Idle"
@@ -270,8 +271,10 @@ position = Vector2(214, 50)
 position = Vector2(262, -15)
 
 [node name="KillZone" parent="." unique_id=41193945 instance=ExtResource("5_b2bpf")]
-collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KillZone" unique_id=960178965]
 position = Vector2(71, 120)
 shape = SubResource("WorldBoundaryShape2D_b2bpf")
+
+[node name="Slime" parent="." unique_id=738893615 instance=ExtResource("6_7lihs")]
+position = Vector2(44, 18)
