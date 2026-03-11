@@ -230,7 +230,7 @@ _data = {
 position = Vector2(112, 45)
 
 [node name="Player" parent="." unique_id=79405842 instance=ExtResource("1_iukft")]
-position = Vector2(-5, -45)
+position = Vector2(264, 6)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1504128213]
 position = Vector2(0, 5)
