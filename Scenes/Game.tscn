@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://dms3ccwr3lkvx"]
 
+[ext_resource type="Script" uid="uid://6g2lvd0s1bin" path="res://Scripts/game_manager.gd" id="1_7lihs"]
 [ext_resource type="PackedScene" uid="uid://uapf61ibifp" path="res://Scenes/Player.tscn" id="1_iukft"]
+[ext_resource type="FontFile" uid="uid://dg2bbmjutghb4" path="res://Assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="2_fgofq"]
 [ext_resource type="Texture2D" uid="uid://ecdhfihsrbbp" path="res://Assets/brackeys_platformer_assets/sprites/world_tileset.png" id="2_gl6un"]
 [ext_resource type="PackedScene" uid="uid://dbnlxowky5bvg" path="res://Scenes/Platform.tscn" id="2_j5yw3"]
 [ext_resource type="PackedScene" uid="uid://b37160rwrwry4" path="res://Scenes/Coin.tscn" id="4_kldst"]
@@ -228,6 +230,22 @@ _data = {
 
 [node name="Game" type="Node2D" unique_id=10640879]
 position = Vector2(112, 45)
+
+[node name="GameManager" type="Node" parent="." unique_id=493732350]
+unique_name_in_owner = true
+script = ExtResource("1_7lihs")
+
+[node name="ScoreLabel" type="Label" parent="GameManager" unique_id=1212470828]
+offset_left = 84.0
+offset_top = -25.0
+offset_right = 267.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0.24705882, 0.49411765, 0.68235296, 1)
+theme_override_fonts/font = ExtResource("2_fgofq")
+theme_override_font_sizes/font_size = 13
+text = "You've collected X coins."
+horizontal_alignment = 1
+autowrap_mode = 2
 
 [node name="Player" parent="." unique_id=79405842 instance=ExtResource("1_iukft")]
 position = Vector2(264, 6)

@@ -1,7 +1,8 @@
 extends Area2D
 
 @onready var timer: Timer = $Timer
+@onready var game_manager: Node = %GameManager
 
 func _on_body_entered(body):
-	print("coin +1");
+	game_manager.add_point()
 	queue_free();
